@@ -46,3 +46,61 @@ section {
   z-index: 2;
   position: relative;
 }
+
+/* Navbar Dropdown Hover */
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.dropdown-menu {
+  background-color: #1c1c1c; 
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+}
+
+.dropdown-item {
+  color: #ddd !important;
+  transition: 0.3s;
+}
+
+.dropdown-item:hover {
+  background-color: #0072ff;
+  color: #fff !important;
+  border-radius: 6px;
+}
+
+/* Project Cards */
+.project-card {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 25px rgba(0, 114, 255, 0.5);
+}
+
+/* Back Button (if needed) */
+.back-btn {
+  width: 25%;
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #007bff, #00d4ff);
+  color: white;
+  font-weight: 600;
+  border-radius: 40px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+  transition: all 0.4s ease;
+}
+.back-btn:hover {
+  background: linear-gradient(135deg, #00d4ff, #007bff);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.6);
+  text-decoration: none;
+}
+.back-btn i {
+  margin-right: 8px;
+}

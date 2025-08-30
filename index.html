@@ -5,19 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abdul Rafay — Portfolio</title>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand fw-bold font-awesome font-dark" href="#">Abdul Rafay</a>
+    <a class="navbar-brand fw-bold" href="#">Abdul Rafay</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,12 +27,26 @@
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
         <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+
+        <!-- Projects Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#projects" id="projectsDropdown" role="button">
+            Projects
+          </a>
+          <ul class="dropdown-menu bg-dark text-white" aria-labelledby="projectsDropdown">
+            <li><a class="dropdown-item text-white" href="./Project/index.html">Frontend Project</a></li>
+            <li><a class="dropdown-item text-white" href="./Ocean Gate/anas.html">Full Stack Project</a></li>
+            <li><a class="dropdown-item text-white" href="./graphic designing/index.html">Graphic Designing Project</a></li>
+          </ul>
+        </li>
+
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
+<!-- HERO -->
 <header id="hero" class="vh-100 d-flex align-items-center text-center text-white">
   <div id="vanta-bg"></div>
   <div class="container position-relative">
@@ -44,6 +58,7 @@
   </div>
 </header>
 
+<!-- ABOUT -->
 <section id="about" class="py-5">
   <div class="container text-white">
     <h2 class="text-center mb-4">About Me</h2>
@@ -55,6 +70,7 @@
   </div>
 </section>
 
+<!-- EDUCATION -->
 <section id="education" class="py-5 bg-dark text-white">
   <div class="container">
     <h2 class="text-center mb-4">Education</h2>
@@ -65,6 +81,7 @@
   </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills" class="py-5">
   <div class="container text-white">
     <h2 class="text-center mb-4">Skills</h2>
@@ -77,15 +94,52 @@
   </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects" class="py-5 bg-dark text-white">
   <div class="container">
     <h2 class="text-center mb-4">Projects</h2>
-    <ul>
-      <li>Developed multiple sample/practice websites using HTML, CSS, JS, Bootstrap</li>
-      <li>Created WordPress websites with custom themes & plugins</li>
-      <li>Designed posters, flyers & branding material in Photoshop & Illustrator</li>
-      <li>Completed online modules in Digital Marketing & SEO</li>
-    </ul>
+    <div class="row g-4">
+
+      <!-- Project 1 -->
+      <div class="col-md-4">
+        <a href="./Project/index.html" class="text-decoration-none">
+          <div class="card bg-secondary text-white h-100 shadow-lg project-card">
+            <div class="card-body text-center">
+              <i class="fa-solid fa-code fa-3x mb-3"></i>
+              <h5 class="card-title">Frontend Project</h5>
+              <p class="card-text">Built with HTML, CSS, JavaScript, Bootstrap.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-4">
+        <a href="./Ocean Gate/anas.html" class="text-decoration-none">
+          <div class="card bg-secondary text-white h-100 shadow-lg project-card">
+            <div class="card-body text-center">
+              <i class="fa-solid fa-database fa-3x mb-3"></i>
+              <h5 class="card-title">Full Stack Project</h5>
+              <p class="card-text">Laravel, PHP, MySQL, Bootstrap integration.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-4">
+        <a href="./graphic designing/index.html" class="text-decoration-none">
+          <div class="card bg-secondary text-white h-100 shadow-lg project-card">
+            <div class="card-body text-center">
+              <i class="fa-solid fa-paintbrush fa-3x mb-3"></i>
+              <h5 class="card-title">Graphic Designing</h5>
+              <p class="card-text">Posters, flyers, and branding using Photoshop & Illustrator.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -93,7 +147,7 @@
 <section id="contact" class="py-5">
   <div class="container text-white text-center">
     <h2 class="mb-4">Contact Me</h2>
-    <p><i class="fa-regular fa-envelope"></i> rafaykhan2933@gmail.com</p>
+    <p><i class="fa-regular fa-envelope"></i> rafaykhan.works@gmail.com</p>
     <p><i class="fa-solid fa-phone"></i> (+92) 3253019814</p>
     <form class="mx-auto" style="max-width:500px;">
       <input type="text" class="form-control mb-2" placeholder="Your Name" required>
@@ -104,14 +158,16 @@
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer class="bg-dark text-white text-center py-3">
   © 2025 Abdul Rafay | All Rights Reserved
 </footer>
+
+<!-- SCRIPTS -->
 <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.fog.min.js"></script> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
-
 <script src="script.js"></script>
 </body>
 </html>
